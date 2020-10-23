@@ -53,7 +53,9 @@ Configuration of Altorouter to autoload also our classes when vendor/autoload.ph
 }
 
 ```
-- Update Altorouter autoload file with this command : 
+
+- Update Altorouter autoload file with this command :
+
 ```
 composer dump-autoload
 ```

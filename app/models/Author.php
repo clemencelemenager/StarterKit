@@ -2,19 +2,32 @@
 
 namespace app\models;
 
+/**
+ * Model for an author
+ */
+
 class Author 
 { 
-    // public $id;
+
+    // =============================================================== 
+    // Properties
+    // =============================================================== 
+
     public $name;
+
+
+    // ===============================================================
+    // CONSTRUCT
+    // =============================================================== 
 
     /**
      * Function construct to create an object author
      * 
-     * @param [int] $_id        Unique id for the author
      * @param [string] $name    Name of the author 
+     * 
      */
-    public function __construct($_name) {
-        // $this->id = $_id;
+    public function __construct($_name) 
+    {
         $this->name = $_name;
     }
 

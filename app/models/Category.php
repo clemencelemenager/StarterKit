@@ -2,21 +2,35 @@
 
 namespace app\models;
 
+/**
+ * Model for a category
+ */
+
 class Category 
 { 
-    // public $id;
+  
+    // =============================================================== 
+    // Properties
+    // =============================================================== 
+
     public $name;
+
+
+    // ===============================================================
+    // CONSTRUCT
+    // =============================================================== 
 
     /**
      * Function construct to create an object category
-     *
-     * @param [int] $_id        Unique id of the category
-     * @param [string] $_name   Name of category
+     * 
+     * @param [string] $name    Name of the category 
+     * 
      */
-    public function __construct($_name) {
-        // $this->id = $_id;
+    public function __construct($_name) 
+    {
         $this->name = $_name;
     }
 
-    
 }
+
+
