@@ -1,5 +1,7 @@
 <?php
 
+namespace app\models;
+
 /**
  * Class for article in a blog
  */

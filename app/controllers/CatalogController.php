@@ -1,5 +1,9 @@
 <?php
 
+namespace app\controllers;
+
+use app\controllers\MainController;
+
 class CatalogController {
 
     /**

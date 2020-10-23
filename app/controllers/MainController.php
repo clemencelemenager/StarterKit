@@ -1,5 +1,10 @@
 <?php
+
+namespace app\controllers;
+
+// =========================================================
 // #MAINCONTROLLER
+// =========================================================
 
 class MainController
 {
@@ -56,15 +61,13 @@ class MainController
      * @param string $viewName  Name of the template to display 
      * @param array $viewVars   Set of informations used for page content
      */
-    public function show($viewName, $viewVars=[]) {
-        // #URL-REWRITING
-        /* Fix part of the url */
+    public function show($viewName, $viewVars=[]) 
+    {
+        /* Fix part of the url for #URL-REWRITING */
         $viewVars['baseURL'] = $_SERVER["BASE_URI"];
-
-        // Dynamic part of the url - to customize css class depending on current page
+        /* Dynamic part of the url - to customize css class depending on current page */
         $viewVars['currentURL'] = $_GET['_url'] ?? "/" ;
         
-        // Construction of the page to display
         require_once __DIR__.'/../views/header.tpl.php';
         require_once __DIR__.'/../views/'.$viewName.'.tpl.php';
         require_once __DIR__.'/../views/footer.tpl.php';

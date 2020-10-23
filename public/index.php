@@ -3,65 +3,80 @@
 error_reporting(E_ALL);
 
 
-// #CONTROLLER
-require_once __DIR__ . '/../app/controllers/MainController.php';
-require_once __DIR__ . '/../app/controllers/CatalogController.php';
+// ===============================================================
+// AUTOLOAD FILES
+// ===============================================================
+
+require __DIR__ . "/../vendor/autoload.php";
 
 
-// ======================================================================
-// #ROUTING_URL
-// ======================================================================
+// ===============================================================
+// INIT ROUTER
+// ===============================================================
 
-/* Altorouter */
-require_once __DIR__."/../vendor/altorouter/altorouter/AltoRouter.php";
 $router = new AltoRouter();
 
-$currentURL = $_GET['_url'] ?? "/" ;
+/* Set of the basepath for my router (subfile in localhost) */
 $baseURL = $_SERVER['BASE_URI'];
 $router->setBasePath($baseURL);
 
-/* Map URL */
+$currentURL = $_GET['_url'] ?? "/";
+
+
+// ===============================================================
+// MAPPING ROUTES
+// ===============================================================
+
 $router->map( 
     'GET', '/', [
-        "controller"   => "MainController",
+        "controller"   => "app\controllers\MainController",
         "method"       => "home"],   
     'main-home'             
 );
 $router->map( 
     'GET', '/register',[
-        "controller"   => "MainController",
+        "controller"   => "app\controllers\MainController",
         "method"       => "register"],   
     'main-register'             
 );
 $router->map( 
     'GET','/store',[
-        "controller"   => "CatalogController",
+        "controller"   => "app\controllers\CatalogController",
         "method"       => "store"],   
     'catalog-store'             
 );
 $router->map( 
     'GET','/blog',  [
-        "controller"   => "MainController",
+        "controller"   => "app\controllers\MainController",
         "method"       => "blog"],   
     'main-blog'             
 );
 $router->map( 
     'GET','/contact',  [
-        "controller"   => "MainController",
+        "controller"   => "app\controllers\MainController",
         "method"       => "contact"],   
     'main-contact'             
 );
 $router->map( 
     'GET','/about',  [
-        "controller"   => "MainController",
+        "controller"   => "app\controllers\MainController",
         "method"       => "about"],   
     'main-about'             
 );
 
-/* Match url */
+
+// ===============================================================
+// MATCH
+// ===============================================================
+
 $match = $router->match();
 
-/* Dispatcher URL */
+
+// ===============================================================
+// DISPATCHER
+// ===============================================================
+
+/* if url matches with a route, call controller & method set in mapping */
 if($match)
 {
     $methodToCall = $match["target"]["method"];
@@ -70,6 +85,7 @@ if($match)
     $controller = new $controllerToCall();
     $controller->$methodToCall($match["params"]);
 }
+/* else display a 404 page */
 else
 {
     exit( "404 Not Found" );
