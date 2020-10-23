@@ -5,7 +5,7 @@
 
         <div class="row mx-0">
 
-            <div class="col-md-6">
+            <div class="col-md-6 mb-2">
                 <div class="card border-0 text-white text-center">
                     <img src="<?= $viewVars["baseURL"] ?>/images/plant_bg.jpeg" alt="" class="card-img">
                     <div class="card-img-overlay d-flex align-items-center">
@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mb-2">
                 <div class="card border-0 text-dark text-center">
                     <img src="<?= $viewVars["baseURL"] ?>/images/green_blur.jpeg" alt="" class="card-img">
                     <div class="card-img-overlay d-flex align-items-center">
@@ -38,54 +38,54 @@
 
         <div class="row mx-0">
             
-            <div class="col-lg-4">
-            <div class="card border-0 text-center text-dark">
-                <img src="<?= $viewVars["baseURL"] ?>/images/green_blur_2.jpeg"
-                alt="Card image" class="card-img">
-                <div class="card-img-overlay d-flex align-items-center">
-                <div class="w-100">
-                    <h2 class="display-4 mb-4">
-                        Item 3
-                    </h2>
-                    <a href="category.html" class="btn btn-link text-dark">
-                        Lorem ipsum
-                    <i class="fa-arrow-right fa ml-2"></i></a>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-2">
                 <div class="card border-0 text-center text-dark">
-                <img src="<?= $viewVars["baseURL"] ?>/images/green_blur_3.jpeg"
+                    <img src="<?= $viewVars["baseURL"] ?>/images/green_blur_2.jpeg"
                     alt="Card image" class="card-img">
-                <div class="card-img-overlay d-flex align-items-center">
+                    <div class="card-img-overlay d-flex align-items-center">
                     <div class="w-100">
-                    <h2 class="display-4 mb-4">
-                        Item 4
-                    </h2>
-                    <a href="category.html" class="btn btn-link text-dark">
-                    Lorem ipsum
-                        <i class="fa-arrow-right fa ml-2"></i>
-                    </a>
+                        <h2 class="display-4 mb-4">
+                            Item 3
+                        </h2>
+                        <a href="category.html" class="btn btn-link text-dark">
+                            Lorem ipsum
+                        <i class="fa-arrow-right fa ml-2"></i></a>
                     </div>
                 </div>
+            </div>
+            </div>
+            <div class="col-lg-4 mb-2">
+                <div class="card border-0 text-center text-dark">
+                    <img src="<?= $viewVars["baseURL"] ?>/images/green_blur_3.jpeg"
+                        alt="Card image" class="card-img">
+                    <div class="card-img-overlay d-flex align-items-center">
+                        <div class="w-100">
+                        <h2 class="display-4 mb-4">
+                            Item 4
+                        </h2>
+                        <a href="category.html" class="btn btn-link text-dark">
+                        Lorem ipsum
+                            <i class="fa-arrow-right fa ml-2"></i>
+                        </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-            <div class="card border-0 text-center text-white">
-                <img src="<?= $viewVars["baseURL"] ?>/images/plant_bg.jpeg"
-                alt="Card image" class="card-img">
-                <div class="card-img-overlay d-flex align-items-center">
-                <div class="w-100">
-                    <h2 class="display-4 mb-4">
-                        Item 5
-                    </h2>
-                    <a href="category.html" class="btn btn-link text-white">
-                    Lorem ipsum
-                    <i class="fa-arrow-right fa ml-2"></i></a>
+            <div class="col-lg-4 mb-2">
+                <div class="card border-0 text-center text-white">
+                    <img src="<?= $viewVars["baseURL"] ?>/images/plant_bg.jpeg"
+                    alt="Card image" class="card-img">
+                    <div class="card-img-overlay d-flex align-items-center">
+                    <div class="w-100">
+                        <h2 class="display-4 mb-4">
+                            Item 5
+                        </h2>
+                        <a href="category.html" class="btn btn-link text-white">
+                        Lorem ipsum
+                        <i class="fa-arrow-right fa ml-2"></i></a>
+                    </div>
+                    </div>
                 </div>
-                </div>
-            </div>
             </div>
             
         </div>
