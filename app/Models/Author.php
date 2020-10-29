@@ -1,14 +1,14 @@
 <?php
 
-namespace app\models;
+namespace App\Models;
 
 /**
- * Model for a category
+ * Model for an author
  */
 
-class Category 
+class Author 
 { 
-  
+
     // =============================================================== 
     // Properties
     // =============================================================== 
@@ -21,9 +21,9 @@ class Category
     // =============================================================== 
 
     /**
-     * Function construct to create an object category
+     * Function construct to create an object author
      * 
-     * @param [string] $name    Name of the category 
+     * @param [string] $name    Name of the author 
      * 
      */
     public function __construct($_name) 
@@ -31,6 +31,5 @@ class Category
         $this->name = $_name;
     }
 
+
 }
-
-

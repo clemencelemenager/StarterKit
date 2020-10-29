@@ -56,5 +56,44 @@
             "router",
             "routing"
         ]
+    },
+    {
+        "name": "benoclock/alto-dispatcher",
+        "version": "1.1",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/benoclock/AltoDispatcher.git",
+            "reference": "aa05d13d92ae7ac984ec4e63ff439f57fe1efb3d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/benoclock/AltoDispatcher/zipball/aa05d13d92ae7ac984ec4e63ff439f57fe1efb3d",
+            "reference": "aa05d13d92ae7ac984ec4e63ff439f57fe1efb3d",
+            "shasum": ""
+        },
+        "require": {
+            "altorouter/altorouter": ">=1.2",
+            "php": ">=5.6.0"
+        },
+        "time": "2020-03-12T15:03:34+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "Dispatcher.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "benoclock",
+                "email": "benjamin@oclock.io"
+            }
+        ],
+        "description": "AltoDispatcher is a simple and easy-to-use class for dispatching after AltoRouter routing"
     }
 ]
