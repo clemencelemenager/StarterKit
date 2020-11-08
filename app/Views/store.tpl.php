@@ -3,10 +3,8 @@
 
         <!-- CARROUSEL -->
 
-        <div class="container-fluid">
-
+        <!-- <div class="container-fluid">
             <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -32,9 +30,21 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+        </div> -->
 
-        </div>
+
+        <!-- OVERLAY instead of Carrousel -->
         
+        <div class="overlay container-fluid">
+            <div class="card text-white">
+                <img src="<?= $assetsBaseUri ?>/images/plant_bg.jpeg" class="rounded card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+            </div>
+        </div>
       
         <!-- CATEGORIES -->
 
@@ -48,7 +58,7 @@
 
                 <div class="col-lg-4 col-md-6 mb-2">
                     <div class="card border-0 text-white text-center">
-                        <img src="<?= $assetsBaseUri ?>/images/plant_bg.jpeg" alt="" class="rounded card-img">
+                        <img src="<?= $assetsBaseUri ?>/images/green_blur_2.jpeg" alt="" class="rounded card-img">
                         <div class="card-img-overlay d-flex align-items-center">
                             <div class="w-100 py-3">
                                 <h2 class="display-3 font-weight-bold mb-4">
@@ -61,7 +71,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-2">
                     <div class="card border-0 text-dark text-center">
-                        <img src="<?= $assetsBaseUri ?>/images/green_blur.jpeg" alt="" class="rounded card-img">
+                        <img src="<?= $assetsBaseUri ?>/images/green_blur_2.jpeg" alt="" class="rounded card-img">
                         <div class="card-img-overlay d-flex align-items-center">
                             <div class="w-100 py-3">
                                 <h2 class="display-3 font-weight-bold mb-4">
@@ -74,7 +84,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-2">
                     <div class="card border-0 text-dark text-center">
-                        <img src="<?= $assetsBaseUri ?>/images/green_blur.jpeg" alt="" class="rounded card-img">
+                        <img src="<?= $assetsBaseUri ?>/images/green_blur_2.jpeg" alt="" class="rounded card-img">
                         <div class="card-img-overlay d-flex align-items-center">
                             <div class="w-100 py-3">
                                 <h2 class="display-3 font-weight-bold mb-4">
@@ -110,7 +120,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-2">
                     <div class="card border-0 text-center text-dark">
-                        <img src="<?= $assetsBaseUri ?>/images/green_blur_3.jpeg"
+                        <img src="<?= $assetsBaseUri ?>/images/green_blur_2.jpeg"
                             alt="Card image" class="rounded card-img">
                         <div class="card-img-overlay d-flex align-items-center">
                             <div class="w-100">

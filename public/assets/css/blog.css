@@ -165,6 +165,10 @@ footer .links a:hover {
     margin-right: 0.7em;
 }
 
+div. .overlay {
+    height:50px;
+}
+
 /* DEVICE TABLET => md in bootstrap */
 @media (min-width:768px) {
 
