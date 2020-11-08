@@ -55,6 +55,9 @@ $match = $router->match();
 
 /* Instance of Altodispatcher to make dispatch */
 $dispatcher = new Dispatcher($match, '\App\Controllers\ErrorController::err404');
+/* Params for contructor : router & match */
+$dispatcher->setControllersArguments( [$router, $match] );
+/* Launch dispatch */
 $dispatcher->dispatch();
 
 

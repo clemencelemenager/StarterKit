@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark d-flex justify-content-between">
           
     <!-- LOGO -->    
-    <a class="navbar-brand" href="<?=$viewVars['baseURL']?>/">
+    <a class="navbar-brand" href="<?=$baseUri?>/">
         LOGO
     </a>
 
@@ -17,33 +17,33 @@
     <!-- Navbar collapsed on mobile screens -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav ">
-            <li class="nav-item <?= $viewVars['currentURL'] === '/' ? "active" : ""?>">
-                <a class="nav-link" href="<?=$viewVars['baseURL']?>/">
+            <li class="nav-item <?= $currentURL === '/' ? "active" : ""?>">
+                <a class="nav-link" href="<?=$baseUri?>/">
                     Home
                 </a>
             </li>
-            <li class="nav-item <?= $viewVars['currentURL'] === '/register' ? "active" : ""?>">
-                <a class="nav-link" href="<?=$viewVars['baseURL']?>/register">
+            <li class="nav-item <?= $currentURL === '/register' ? "active" : ""?>">
+                <a class="nav-link" href="<?=$baseUri?>/register">
                     Register
                 </a>
             </li>
-            <li class="nav-item <?= $viewVars['currentURL'] === '/store' ? "active" : ""?>">
-                <a class="nav-link" href="<?=$viewVars['baseURL']?>/store">
+            <li class="nav-item <?= $currentURL === '/store' ? "active" : ""?>">
+                <a class="nav-link" href="<?=$baseUri?>/store">
                     Store
                 </a>
             </li>
-            <li class="nav-item <?= $viewVars['currentURL'] === '/blog' ? "active" : ""?>">
-                <a class="nav-link" href="<?=$viewVars['baseURL']?>/blog">
+            <li class="nav-item <?= $currentURL === '/blog' ? "active" : ""?>">
+                <a class="nav-link" href="<?=$baseUri?>/blog">
                     Blog
                 </a>
             </li>
-            <!-- <li class="nav-item <?= $viewVars['currentURL'] === '/about' ? "active" : ""?>">
-                <a class="nav-link" href="<?=$viewVars['baseURL']?>/about">
+            <!-- <li class="nav-item <?= $currentURL === '/about' ? "active" : ""?>">
+                <a class="nav-link" href="<?=$baseUri?>/about">
                     About
                 </a>
             </li> -->
-            <li class="nav-item <?= $viewVars['currentURL'] === '/contact' ? "active" : ""?>">
-                <a class="nav-link" href="<?=$viewVars['baseURL']?>/contact">
+            <li class="nav-item <?= $currentURL === '/contact' ? "active" : ""?>">
+                <a class="nav-link" href="<?=$baseUri?>/contact">
                     Contact
                 </a>
             </li>
@@ -53,7 +53,7 @@
 
 <!-- MENU FOR STORE -->
 <?php
-if ($viewVars['currentURL'] === '/store') : ?>
+if ($currentURL === '/store') : ?>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
 

@@ -17,7 +17,7 @@ class MainController extends CoreController
      * @var $viewVars [array] Optionnal - Set of informations used for page content 
     */
     public function home() { 
-        $this->show('home');
+        $this->show('main/home');
     }
 
     /**
