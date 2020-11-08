@@ -32,64 +32,11 @@
 
     <header>
 
-        <!-- NAV -->
-        <nav class="navbar navbar-expand-md navbar-light">
-          
-          <a class="navbar-brand" href="<?=$viewVars['baseURL']?>/">
-            LOGO
-          </a>
+        <?php
+        require_once "nav.tpl.php"; 
+        ?>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            Menu <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <!-- Navbar collapsed on mobile screens -->
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav ">
-              <?php 
-              // TODO : link to each category
-              // TODO : class css "active" for currentpage
-              // TODO : foreach on category list 
-              ?>
-              <!-- Assign class CSS "active" for current page -->
-              <li class="nav-item <?= $viewVars['currentURL'] === '/' ? "active" : ""?>">
-                <a 
-                class="nav-link" href="<?=$viewVars['baseURL']?>/">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item <?= $viewVars['currentURL'] === '/register' ? "active" : ""?>">
-                <a class="nav-link" href="<?=$viewVars['baseURL']?>/register">
-                  Register
-                </a>
-              </li>
-              <li class="nav-item <?= $viewVars['currentURL'] === '/store' ? "active" : ""?>">
-                <a class="nav-link" href="<?=$viewVars['baseURL']?>/store">
-                  Store
-                </a>
-              </li>
-              <li class="nav-item <?= $viewVars['currentURL'] === '/blog' ? "active" : ""?>">
-                <a class="nav-link" href="<?=$viewVars['baseURL']?>/blog">
-                  Blog
-                </a>
-              </li>
-              <li class="nav-item <?= $viewVars['currentURL'] === '/about' ? "active" : ""?>">
-                <a class="nav-link" href="<?=$viewVars['baseURL']?>/about">
-                  About
-                </a>
-              </li>
-              <li class="nav-item <?= $viewVars['currentURL'] === '/contact' ? "active" : ""?>">
-                <a class="nav-link" href="<?=$viewVars['baseURL']?>/contact">
-                  Contact
-                </a>
-              </li>
-              
-            </ul>
-          </div>
-
-        </nav>
-
+        
         <section class="text-center">
           <h1>Title h1</h1>
           <hr />

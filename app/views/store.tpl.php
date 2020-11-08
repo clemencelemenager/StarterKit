@@ -38,7 +38,7 @@
 
         <div class="row mx-0">
             
-            <div class="col-lg-4 mb-2">
+            <div class="col-lg-4 col-md-6 mb-2">
                 <div class="card border-0 text-center text-dark">
                     <img src="<?= $viewVars["baseURL"] ?>/images/green_blur_2.jpeg"
                     alt="Card image" class="card-img">
@@ -54,7 +54,7 @@
                 </div>
             </div>
             </div>
-            <div class="col-lg-4 mb-2">
+            <div class="col-lg-4 col-md-6 mb-2">
                 <div class="card border-0 text-center text-dark">
                     <img src="<?= $viewVars["baseURL"] ?>/images/green_blur_3.jpeg"
                         alt="Card image" class="card-img">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 mb-2">
+            <div class="col-lg-4 col-md-6 mb-2">
                 <div class="card border-0 text-center text-white">
                     <img src="<?= $viewVars["baseURL"] ?>/images/plant_bg.jpeg"
                     alt="Card image" class="card-img">
