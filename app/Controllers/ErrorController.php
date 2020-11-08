@@ -15,4 +15,15 @@ class ErrorController extends CoreController
 
         $this->show('error/err404');
     }
+
+    /**
+     * Method for 403 page 
+     *
+     * @return void
+     */
+    public static function err403() {
+        http_response_code(403);
+        echo "403 Forbidden - vous n'avez pas accès à cette page";
+        exit();  
+    }
 }
