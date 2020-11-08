@@ -1,5 +1,34 @@
 <section>
     <div class="container-fluid">
+
+        <!-- carrousel -->
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade mb-3 mx-3" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="200">
+                        <img src="<?= $viewVars["baseURL"] ?>/images/plant_bg.jpeg" class="d-block w-100" alt="Lorem ipsum">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?= $viewVars["baseURL"] ?>/images/green_blur.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?= $viewVars["baseURL"] ?>/images/plant_bg.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        
       
         <!-- first row -->
 
@@ -38,7 +67,7 @@
 
         <div class="row mx-0">
             
-            <div class="col-lg-4 mb-2">
+            <div class="col-lg-4 col-md-6 mb-2">
                 <div class="card border-0 text-center text-dark">
                     <img src="<?= $viewVars["baseURL"] ?>/images/green_blur_2.jpeg"
                     alt="Card image" class="card-img">
@@ -54,7 +83,7 @@
                 </div>
             </div>
             </div>
-            <div class="col-lg-4 mb-2">
+            <div class="col-lg-4 col-md-6 mb-2">
                 <div class="card border-0 text-center text-dark">
                     <img src="<?= $viewVars["baseURL"] ?>/images/green_blur_3.jpeg"
                         alt="Card image" class="card-img">
@@ -71,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 mb-2">
+            <div class="col-lg-4 col-md-6 mb-2">
                 <div class="card border-0 text-center text-white">
                     <img src="<?= $viewVars["baseURL"] ?>/images/plant_bg.jpeg"
                     alt="Card image" class="card-img">
