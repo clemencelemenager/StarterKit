@@ -9,6 +9,11 @@ error_reporting(E_ALL);
 
 require __DIR__ . "/../vendor/autoload.php";
 
+// ===============================================================
+// INIT SESSION
+// ===============================================================
+
+session_start();
 
 // ===============================================================
 // INIT ROUTER
@@ -32,12 +37,7 @@ else {
 // MAPPING ROUTES
 // ===============================================================
 
-$router->map( 'GET'     , '/'           , 'App\Controllers\MainController::home'        , 'main-home'           );
-$router->map( 'GET'     , '/register'   , 'App\Controllers\MainController::register'    , 'main-register'       );
-$router->map( 'GET'     , '/blog'       , 'App\Controllers\MainController::blog'        , 'main-blog'           );
-$router->map( 'GET'     , '/contact'    , 'App\Controllers\MainController::contact'     , 'main-contact'        );
-$router->map( 'GET'     , '/about'      , 'App\Controllers\MainController::about'       , 'main-about'          );
-$router->map( 'GET'     , '/store'      , 'App\Controllers\CatalogController::store'    , 'catalog-store'       );
+require __DIR__ . "/../app/Utils/routes.php";
 
 
 // ===============================================================
@@ -58,7 +58,3 @@ $dispatcher = new Dispatcher($match, '\App\Controllers\ErrorController::err404')
 $dispatcher->dispatch();
 
 
-
-
-/* Init of variables that will be used in methods */
-$viewVars = [];
