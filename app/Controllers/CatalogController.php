@@ -1,10 +1,11 @@
 <?php
 
-namespace app\controllers;
+namespace App\Controllers;
 
-use app\controllers\MainController;
+use App\Controllers\CoreController;
 
-class CatalogController {
+class CatalogController extends CoreController
+{
 
     /**
      * Function to display store homepage with specific informations
@@ -27,8 +28,7 @@ class CatalogController {
             'key2'          => 'value',
         ];
 
-        $controller = new MainController();
-        $controller->show('store', $viewVars);
+        $this->show('store', $viewVars);
 
     }
 
@@ -38,8 +38,7 @@ class CatalogController {
      */
     public function product($p_params) 
     {
-        $controller = new MainController();
-        $controller->show('product', $p_params);
+        $this->show('product', $p_params);
 
     }
 

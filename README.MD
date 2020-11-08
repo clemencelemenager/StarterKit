@@ -1,29 +1,44 @@
-# Package with some dev ressources
+# Package StarterKit 
 
-Project which centralizes most practices and ressources (CSS, HTML, JAVASCRIPT, PHP, etc.) used in formation in order to have a work basis for other projects
+Project to practice what I learned in web developpement courses  (CSS, HTML, JAVASCRIPT, PHP, etc.). It can be a template as a work basis for other projects.
 
-## MVC - Model View Controller
+Be careful it's a "noob" project ;), please make comments and share advices for improvements !
 
-### Folder structure
+## Getting started
 
-All files MVC are organized in an app/ folder with no access from client.
+### 1 - Install Composer on the project's root folder
+
+Composants specified in composer.json will be deployed (Altorouter, Var_dumper)
+
+```
+composer install
+```
+
+### 2 - Init your database access
+
+Duplicate config.ini.dist in config.ini with your own values.
+
+### 3 - Upload some samples datas in DB
+
+// Todo : model file sql in /docs/ with samples datas
+
+
+## More informations about the code
+
+### MVC Structure - Model / View / Controller
+
+All files are organized in an app/ folder with no access from client.
 Client files are organized in public/ folder.
 
-### Controllers
+- Controllers - Management of the page to display (template and content) from unique entrance index.php.
 
-Management of the page to display (template and content) from unique entrance index.php.
+- Models - Properties, construct and methods to manipulate datas
 
-### Models
+- Views - Templates of page to require through controllers.
 
-#PDO - Connect with DB, configuration and manipulation of datas in database
+### Router
 
-### Views
-
-Templates of page to require through controllers.
-
-## Router
-
-Use of composant Altorouter with Composer. Requires .htaccess with correct config.
+Use of the Altorouter composant to make routing. 
 
 - Install Altorouter in project with Composer :
 
@@ -35,9 +50,11 @@ composer require altorouter/altorouter
 - Map routes
 - Match() & dispatcher
 
+Completed with Alto-dispatcher composant to make dispatch easier : https://packagist.org/packages/benoclock/alto-dispatcher
+
 ### Autoloading files
 
-Configuration of Altorouter to autoload also our classes when vendor/autoload.php is required.
+Altorouter is also used to autoload our classes when vendor/autoload.php is required. Configuration as following : 
 
 - Set namespaces for our classes with correct synthax for psr-4 (example : app\controllers\MainController)
 - Complete the file composer.json :
@@ -48,10 +65,9 @@ Configuration of Altorouter to autoload also our classes when vendor/autoload.ph
         "altorouter/altorouter": "^2.0"
     },
     "autoload" : {
-        "psr-4": {"app\\": "app/"}
+        "psr-4": {"App\\": "app/"}
     }
 }
-
 ```
 
 - Update Altorouter autoload file with this command :
@@ -67,4 +83,4 @@ composer dump-autoload
   
 ## DIVERS
 
-- #DEBUG : some practices to facilitate debugging.
+// Todo : install of var dumper

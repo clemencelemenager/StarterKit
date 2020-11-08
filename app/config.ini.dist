@@ -1,7 +1,7 @@
-; Fichier de configuration d'exemple
-; Pour faire fonctionner la BDD, 
-; il faut copier ce fichier et le renommer en config.ini
-; Evidemment, il faut aussi remplir les valeurs
+; Sample file of configuration 
+; to connect with database. 
+; Copy this file and rename it in config.ini 
+; Of course, fill it with your connexion values
 
 DB_HOST=localhost
 DB_USERNAME=
