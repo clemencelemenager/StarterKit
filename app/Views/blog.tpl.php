@@ -1,18 +1,11 @@
 
-<?php
-// TODO : dynamic content
 
-?>
 
-<!-- Container with #Bootstrap : https://getbootstrap.com/docs/4.1/layout/overview/#containers -->
     <div class="container">
-        <!-- https://getbootstrap.com/docs/4.1/layout/grid/-->
         <div class="row"> 
           
-            <!-- Main content displayed on 9 columns for large screens - #Bootstrap : https://getbootstrap.com/docs/4.1/layout/grid/#grid-options -->
             <main class="col-lg-9">
 
-                <!-- Item with #Bootstrap - card: https://getbootstrap.com/docs/4.1/components/card/ -->
                 <article class="card">
                     <div class="card-body">
                         <h2 class="card-title">

@@ -1,4 +1,3 @@
-<section>
     <div class="container-fluid">
 
         <!-- carrousel -->
@@ -133,4 +132,3 @@
        
 
     </div>
-  </section>

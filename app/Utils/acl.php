@@ -5,7 +5,6 @@
 // ===============================================================
 
 $acl = [
-    'main-about'         => ['admin', 'user' ]
 
     // 'appuser-login'        => PUBLIC
     // 'appuser-connect'      => PUBLIC

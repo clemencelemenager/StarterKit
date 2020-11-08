@@ -23,7 +23,7 @@
     </div>
 
     <!-- Footer with #Bootstrap-->
-    <div class="row justify-content-center text-center">
+    <div class="row container-fluid justify-content-center text-center">
         <div class="col-9 links">
         <ul class="list-inline">
             <li class="list-inline-item"><a href="#">Copyright</a></li>

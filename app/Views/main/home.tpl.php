@@ -1,8 +1,8 @@
 
 
-<section class="page-section clearfix">
-    <div class="container">
-        <div class="intro">
+<div class="container">
+    <div class="intro">
+        <section class="page-section clearfix">
 
             <div class="intro-text left-0 text-center p-3 rounded">
                 <h2 class="section-heading mb-4">
@@ -27,8 +27,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-</section>
-
+</div>
 

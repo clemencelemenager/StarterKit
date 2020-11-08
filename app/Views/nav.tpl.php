@@ -37,11 +37,11 @@
                     Blog
                 </a>
             </li>
-            <!-- <li class="nav-item <?= $currentURL === '/about' ? "active" : ""?>">
+            <li class="nav-item <?= $currentURL === '/about' ? "active" : ""?>">
                 <a class="nav-link" href="<?=$baseUri?>/about">
                     About
                 </a>
-            </li> -->
+            </li>
             <li class="nav-item <?= $currentURL === '/contact' ? "active" : ""?>">
                 <a class="nav-link" href="<?=$baseUri?>/contact">
                     Contact
