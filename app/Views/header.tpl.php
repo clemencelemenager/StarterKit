@@ -37,15 +37,6 @@
         ?>
 
         
-        <div class="container-fluid">
-          <section class="text-center">
-            <h1>Title h1</h1>
-            <hr />
-            <p>
-              Introduction about the content proposed on the website
-            </p>
-          </section>
-        </div>
 
       </header>
 

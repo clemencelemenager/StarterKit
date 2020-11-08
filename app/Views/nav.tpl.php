@@ -11,7 +11,7 @@
     <!-- Display text & burger menu on mobile screens -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    Menu <span class="navbar-toggler-icon"></span>
+    Menu 
     </button>
 
     <!-- Navbar collapsed on mobile screens -->
@@ -55,10 +55,10 @@
 <?php
 if ($currentURL === '/store') : ?>
 
-  <nav class="navbar navbar-expand-md navbar-light bg-light ">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      Mon Shopping</span>
+    <span class="navbar-toggler-icon"></span> Shopping
     </button>
 
     <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
@@ -84,10 +84,13 @@ if ($currentURL === '/store') : ?>
       </ul>
 
       <!-- Search form -->
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <div class="searchForm">
+        <form class="form-inline my-2 mx-auto">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go</button>
+        </form>
+      </div>
+      
 
       <!-- My account and Cart -->
       <ul class="navbar-nav">
@@ -101,6 +104,8 @@ if ($currentURL === '/store') : ?>
 
     </div>
   </nav>
+
+  
 
 <?php
 endif;

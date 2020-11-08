@@ -61,7 +61,7 @@ header section {
     padding: 1em 0;
 }
 
-header h1 {
+h1 {
     font-size: 3rem;
     font-weight: 800;
 }
@@ -160,7 +160,10 @@ footer .links a:hover {
     text-decoration: none;
 }
 
-
+#navbarSupportedContent > div > form > input {
+    width: 80%;
+    margin-right: 0.7em;
+}
 
 /* DEVICE TABLET => md in bootstrap */
 @media (min-width:768px) {
@@ -201,6 +204,11 @@ header {
 header section {
     display: none;
 }
+
+#navbarSupportedContent > div > form > input {
+    width: 80%;
+}
+
 }
 
 /* DEVICE PC => lg in bootstrap */

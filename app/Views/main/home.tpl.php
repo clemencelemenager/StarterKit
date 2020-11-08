@@ -4,6 +4,14 @@
     <div class="intro">
         <section class="page-section clearfix">
 
+            <section class="text-center my-4">
+                <h1>Title h1</h1>
+                <p class="mb-4">
+                Introduction about the content proposed on the website
+                </p>
+                <hr />
+            </section>
+
             <div class="intro-text left-0 text-center p-3 rounded">
                 <h2 class="section-heading mb-4">
                     <span class="section-heading-upper">

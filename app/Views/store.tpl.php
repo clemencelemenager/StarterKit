@@ -1,4 +1,4 @@
-    <div class="container-sm mx-sm-3">
+    <div class="container-sm mx-sm-3 my-2">
 
 
         <!-- CARROUSEL -->
