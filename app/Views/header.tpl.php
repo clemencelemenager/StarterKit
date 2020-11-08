@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet"> 
 
     <!-- Custom styles CSS -->
-    <link href="<?= $viewVars["baseURL"] ?>/css/blog.css" rel="stylesheet">
+    <link href="<?= $assetsBaseUri ?>css/blog.css" rel="stylesheet">
 
   </head>
 

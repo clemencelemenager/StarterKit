@@ -10,13 +10,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-interval="200">
-                        <img src="<?= $viewVars["baseURL"] ?>/images/plant_bg.jpeg" class="d-block w-100" alt="Lorem ipsum">
+                        <img src="<?= $baseUri ?>/images/plant_bg.jpeg" class="d-block w-100" alt="Lorem ipsum">
                     </div>
                     <div class="carousel-item">
-                        <img src="<?= $viewVars["baseURL"] ?>/images/green_blur.jpeg" class="d-block w-100" alt="...">
+                        <img src="<?= $baseUri ?>/images/green_blur.jpeg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="<?= $viewVars["baseURL"] ?>/images/plant_bg.jpeg" class="d-block w-100" alt="...">
+                        <img src="<?= $baseUri ?>/images/plant_bg.jpeg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -36,7 +36,7 @@
 
             <div class="col-md-6 mb-2">
                 <div class="card border-0 text-white text-center">
-                    <img src="<?= $viewVars["baseURL"] ?>/images/plant_bg.jpeg" alt="" class="card-img">
+                    <img src="<?= $baseUri ?>/images/plant_bg.jpeg" alt="" class="card-img">
                     <div class="card-img-overlay d-flex align-items-center">
                         <div class="w-100 py-3">
                             <h2 class="display-3 font-weight-bold mb-4">
@@ -49,7 +49,7 @@
             </div>
             <div class="col-md-6 mb-2">
                 <div class="card border-0 text-dark text-center">
-                    <img src="<?= $viewVars["baseURL"] ?>/images/green_blur.jpeg" alt="" class="card-img">
+                    <img src="<?= $baseUri ?>/images/green_blur.jpeg" alt="" class="card-img">
                     <div class="card-img-overlay d-flex align-items-center">
                         <div class="w-100 py-3">
                             <h2 class="display-3 font-weight-bold mb-4">
@@ -69,7 +69,7 @@
             
             <div class="col-lg-4 col-md-6 mb-2">
                 <div class="card border-0 text-center text-dark">
-                    <img src="<?= $viewVars["baseURL"] ?>/images/green_blur_2.jpeg"
+                    <img src="<?= $baseUri ?>/images/green_blur_2.jpeg"
                     alt="Card image" class="card-img">
                     <div class="card-img-overlay d-flex align-items-center">
                     <div class="w-100">
@@ -85,7 +85,7 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-2">
                 <div class="card border-0 text-center text-dark">
-                    <img src="<?= $viewVars["baseURL"] ?>/images/green_blur_3.jpeg"
+                    <img src="<?= $baseUri ?>/images/green_blur_3.jpeg"
                         alt="Card image" class="card-img">
                     <div class="card-img-overlay d-flex align-items-center">
                         <div class="w-100">
@@ -102,7 +102,7 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-2">
                 <div class="card border-0 text-center text-white">
-                    <img src="<?= $viewVars["baseURL"] ?>/images/plant_bg.jpeg"
+                    <img src="<?= $baseUri ?>/images/plant_bg.jpeg"
                     alt="Card image" class="card-img">
                     <div class="card-img-overlay d-flex align-items-center">
                     <div class="w-100">

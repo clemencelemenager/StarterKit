@@ -71,8 +71,10 @@ abstract class CoreController
 
         // Common datas for all views : current page, root url for assets, root url for project
         $viewVars['currentPage'] = $viewName; 
-        $viewVars['assetsBaseUri'] = $_SERVER['BASE_URI'] . 'assets/';
+        $viewVars['assetsBaseUri'] = $_SERVER['BASE_URI'] . '/assets/';
         $viewVars['baseUri'] = $_SERVER['BASE_URI'];
+        $viewVars['currentURL'] = $_GET['_url'] ?? "/" ;
+
         // Each key of the array $viewVars become a variable :
         extract($viewVars);
        
@@ -87,15 +89,15 @@ abstract class CoreController
      *
      * @return void
      */
-    private static function checkPermissions()
+    private function checkPermissions()
     {
         // Access Control List - List of routes and corresponding authorizations
         require __DIR__. "/../Utils/acl.php";
 
          // If current route belong to ACL list, get authorized roles and check acess
-         if (array_key_exists($currentRouteName, $acl)) :
-            $authorizedRoles = $acl[$currentRouteName];
-            CoreController::checkAuthorization(($authorizedRoles));
+         if (array_key_exists($this->currentRouteName, $acl)) :
+            $authorizedRoles = $acl[$this->currentRouteName];
+            $this->checkAuthorization(($authorizedRoles));
         endif;                   
     }
 
@@ -105,7 +107,7 @@ abstract class CoreController
      * @param array $roles : authorized roles
      * @return void
      */
-    public static function checkAuthorization($roles = [])
+    public function checkAuthorization($roles = [])
     {
         // If a user is connected, get his role
         if( isset( $_SESSION['connectedUser'] ) ) 
@@ -123,10 +125,23 @@ abstract class CoreController
         }
         // If not connected, relocate to login page and stop script
         else {
-            global $router;
-            header("Location: ". $router->generate("appuser-login") );
+            $this->redirectToRoute('appuser-login');
             exit();
         }            
+    }
+
+    /**
+     * Relocate to page
+     *   
+     * @param string $routeName Name of route to which relocate (Altorouter)
+     * @param array $params Dynamic params for route
+     *
+     * @return void
+     */
+    protected function redirectToRoute(string $routeName, array $params = [])
+    {
+        header('Location: '.$this->router->generate($routeName, $params));
+        exit;
     }
 
 
