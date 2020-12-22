@@ -10,18 +10,13 @@ Be careful it's a "noob" project ;), please make comments and share advices for 
 
 Composants specified in composer.json will be deployed (Altorouter, Var_dumper)
 
-```
-composer install
+```shell
+$ composer install
 ```
 
 ### 2 - Init your database access
 
 Duplicate config.ini.dist in config.ini with your own values.
-
-### 3 - Upload some samples datas in DB
-
-// Todo : model file sql in /docs/ with samples datas
-
 
 ## More informations about the code
 
@@ -38,12 +33,12 @@ Client files are organized in public/ folder.
 
 ### Router
 
-Use of the Altorouter composant to make routing. 
+Use of the Altorouter composant to make routing.
 
 - Install Altorouter in project with Composer :
 
-```
-composer require altorouter/altorouter
+```shell
+$ composer require altorouter/altorouter
 ```
 
 - Init Altorouter() with set up of the basepath 
@@ -72,8 +67,8 @@ Altorouter is also used to autoload our classes when vendor/autoload.php is requ
 
 - Update Altorouter autoload file with this command :
 
-```
-composer dump-autoload
+```shell
+$ composer dump-autoload
 ```
 
 ## CSS
@@ -81,6 +76,3 @@ composer dump-autoload
 - Integration made with #Bootstrap.
 - Others stylesheets are proposed as examples : normalize.css, reboot.css, reset.css
   
-## DIVERS
-
-// Todo : install of var dumper
